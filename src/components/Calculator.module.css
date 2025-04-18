@@ -1,0 +1,140 @@
+/* .calculator{
+    border:1px solid black;
+border-radius: 1px solid rgb(216, 5, 5);
+    height: 390px;
+    width: 200px;
+    background-color: #fff;
+}
+.calculator input{
+    margin-top: 11px;
+}
+.display{
+height: 30px;
+}
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.button{
+    width: 45px;
+    height: 45px;
+    margin:3px;
+} */
+
+
+
+
+
+
+
+/* Calculator.module.css */
+
+/* Overall container for the calculator */
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f7fa;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  /* Display area (input field) */
+  .display {
+    width: 100%;
+    padding: 20px;
+    font-size: 2.5rem;
+    text-align: right;
+    background-color: #ffffff;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Button container (grid for buttons) */
+  .buttonContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+  }
+  
+  /* Style for individual buttons */
+  .button {
+    padding: 20px;
+    font-size: 1.8rem;
+    background-color: #f2f2f2;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    color: #333;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .button:active {
+    transform: scale(0.95); /* Slightly shrink button when clicked */
+  }
+  
+  .button:focus {
+    outline: none;
+  }
+  
+  /* Special button styles (C and = buttons) */
+  .button-special {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .button-special:hover {
+    background-color: #45a049;
+  }
+  
+  .button-special:active {
+    transform: scale(0.95);
+  }
+  
+  /* Error state for invalid input */
+  .error {
+    color: red;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Responsiveness for smaller screens */
+  @media (max-width: 500px) {
+    .calculator {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .display {
+      font-size: 2rem;
+    }
+  
+    .button {
+      font-size: 1.5rem;
+      padding: 15px;
+    }
+  }
+  
